@@ -12,3 +12,34 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::addnoisedlgshow()
+{
+    std::shared_ptr<NoisyTypeChooseDlg> shdPtrNoisytp(new NoisyTypeChooseDlg());
+
+    shdPtrNoisytp->show();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

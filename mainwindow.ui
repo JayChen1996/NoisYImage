@@ -113,6 +113,33 @@
    </property>
   </action>
  </widget>
+ <tabstops>
+  <tabstop>pbOpenImage</tabstop>
+  <tabstop>pbCloseImage</tabstop>
+  <tabstop>pbAddNoisy</tabstop>
+  <tabstop>pbClearNoisy</tabstop>
+  <tabstop>graphicsView</tabstop>
+ </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pbAddNoisy</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>addnoisedlgshow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>49</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>addnoisedlgshow()</slot>
+ </slots>
 </ui>
