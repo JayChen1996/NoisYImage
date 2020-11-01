@@ -138,8 +138,25 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pbOpenImage</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>133</x>
+     <y>43</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>addnoisedlgshow()</slot>
+  <slot>openImage()</slot>
  </slots>
 </ui>

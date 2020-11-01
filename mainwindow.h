@@ -1,8 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
-
 // OpenCV
 #include <opencv2/opencv.hpp>
 
@@ -12,6 +10,14 @@
 
 // 自己的类
 #include "noisytypechoosedlg.h"
+
+// Qt
+#include <QMainWindow>
+#include <QFileDialog>
+#include <QString>
+#include <QImage>
+#include <QPixmap>
+#include <QGraphicsScene>
 
 
 namespace Ui {
@@ -28,9 +34,13 @@ public:
 
 public slots:
     void addnoisedlgshow();
+    void openImage();
 
 private:
     Ui::MainWindow *ui;
+    QImage img;
+    QPixmap pixmp;
+    QGraphicsScene mscene;
 };
 
 #endif // MAINWINDOW_H
